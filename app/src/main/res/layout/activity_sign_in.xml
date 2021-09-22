@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView :android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".SignInActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+
+        <LinearLayout android:id="@+id/layoutHeader" android:layout_width="match_parent" android:layout_height="@dimen/_150sdp" android:background="@color/colorPrimary" android:gravity="center" android:orientation="vertical" app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="83dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ubuntu_bold"
+                android:includeFontPadding="false"
+                android:text="@string/Bem_Vindo"
+                android:textColor="@color/colorTextIcons"
+                android:textColorHint="#FB1F1F"
+                android:textSize="@dimen/_16ssp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4ssp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textSize="@dimen/_16ssp"
+                android:text="@string/Chamada_Video_Conferencia"
+                android:textColor="@color/colorTextIcons"
+                >
+
+            </TextView>
+            <TextView
+                android:id="@+id/Text_SignInLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/ubuntu_regular"
+                android:includeFontPadding="false"
+                android:text="@string/sign_in_to_your_count"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/_15ssp"
+
+                >
+
+            </TextView>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
